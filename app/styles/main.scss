@@ -3,6 +3,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
 // bower:scss
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
 .browsehappy {
@@ -16,6 +17,8 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    background: black;
+    
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -28,7 +31,7 @@ body {
 
 /* Custom page header */
 .header {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 5px solid #e5e5e5;
 }
 
 /* Make the masthead heading the same height as the navigation */
@@ -37,13 +40,15 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+    color: lavender;
 }
 
 /* Custom page footer */
 .footer {
     padding-top: 19px;
-    color: #777;
+    color: #428bca;
     border-top: 1px solid #e5e5e5;
+    
 }
 
 .container-narrow > hr {
