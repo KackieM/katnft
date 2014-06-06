@@ -21,6 +21,12 @@ body {
     
 }
 
+h3 {
+    font-style: oblique;
+    color: black;
+    font-family: none;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -59,6 +65,7 @@ body {
 .jumbotron {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+    background-color: gray;
 }
 
 .jumbotron .btn {
