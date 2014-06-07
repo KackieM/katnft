@@ -14,12 +14,12 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/blog', {
-        templateUrl: 'views/blog-list.html',
-        controller: 'PostsCtrl'
+      .when('/englishman', {
+        templateUrl: 'views/englishman.html',
+        // controller: 'PostsCtrl'
       })
-      .when('/new', {
-        templateUrl: 'views/blog-create.html',
+      .when('/login', {
+        templateUrl: 'views/login.html',
         controller: 'PostsCtrl'
       })
       .when('/blog/:id', {
