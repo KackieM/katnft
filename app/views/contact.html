@@ -1,21 +1,30 @@
 <!doctype html>
 <div class="header">
+<img src="images/nft_logo_onblack.png" alt="LIFE IN CHARLESTON"><br>
   <ul class="nav nav-pills pull-right">
     <li class=""><a ng-href="#/main">Home</a></li>
     <li><a ng-href="#/about">About</a></li>
     <li><a ng-href="#">Contact</a></li>
+    <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()">Log Out</a></li>
+    <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
   </ul>
-  <h3 class="text-muted">Kackie Angular Project DAY THREE</h3>
+  <h3 class="text-muted">NFT - NOT FOR TOURISTS - CHARLESTON</h3>
 </div>
+  <div class="header">
+
+    <h1>CONTACT</h1>
+  
 <div class="jumbotron">
-  <h1>Art of The Matter</h1>
+  <h1>KACKIE CONTACT</h1>
   <p class="lead">
-    <img src="images/oneredballonbythesea.jpg" alt="I'm The Grim Reaper"><br>
+    <img src="images/lonelyqueen.jpg" alt="I'm The Grim Reaper"><br>
   </p>
-  <p><a class="btn btn-default btn-lg active" ng-href="#/order-create">On To Shop<span class="glyphicon glyphicon-shopping-cart"></span></a></p>
+  <p><a class="btn btn-default btn-lg active" ng-href="#/nft">Let Me Be Your Guide<span class="glyphicon glyphicon-eye-open"></span></a></p>
 </div>
 
 <div class="row marketing">
+<div ng-controller="ArtController as store">
+
 <h4>GALLERY NAVIGATION</h4>
   <ul class="nav nav-pills pull-right">
     <li class=""><a ng-href="#/main">Home</a></li>
@@ -26,21 +35,11 @@
     <li><a ng-href="#/orderSummary">My Order</a></li>
     <li><a ng-href="#/orderSummaryEdit">Edit My Order</a></li>
   </ul>
-  <h4>ARTIST IN RESIDENCE</h4>
   <img src="images/lonelyqueen.jpg" alt="I'm The Grim Reaper"><br>
  
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, sint, esse, minima, at magnam aspernatur eveniet nihil vel molestias magni voluptas fugiat illo culpa sed impedit nulla tempora rem corporis.</p>
-
-  <h4>Up And Coming</h4>
-  <img src="images/fieryumbrellamodel.jpg" alt="I'm The Grim Reaper"><br>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eos, pariatur aliquid consectetur quae ad iure facere dolorum minus quis quasi non labore ullam ipsa omnis doloremque consequatur vel eaque.
-  </p>
-
-  <h4>SHOW ME SOMETHING ABOUT!!</h4>
-  <img src="images/aftershowernyc.jpg" alt="I'm The Grim Reaper"><br>
+  <br>GIVE ME SOME SPACE</br>
 </div>
-
+</body>
 <div class="footer">
-  <p><span class="glyphicon glyphicon-eye-open"></span> THEKACKIEPROJECT</p>
+  <p><a href="http://kat5sc.com"><span class="glyphicon glyphicon-eye-open"></span> THEKACKIEPROJECT</a></p>
 </div>
-</html>

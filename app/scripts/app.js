@@ -5,49 +5,56 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute',
-    'firebase'
+    'ngRoute'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        // controller: 'MainCtrl'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        // controller: 'PostsCtrl'
+      })
+      .when('/arts', {
+        templateUrl: 'views/arts.html',
+        controller: 'PostsCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'PostCtrl'
       })
       .when('/englishman', {
         templateUrl: 'views/englishman.html',
-        // controller: 'PostsCtrl'
+        controller: 'PostCtrl'
+      })
+      .when('/landmarks', {
+        templateUrl: 'views/landmarks.html',
+        controller: 'ProductsCtrl'
       })
       .when('/login', {
         templateUrl: 'views/login.html',
-        controller: 'PostsCtrl'
-      })
-      .when('/blog/:id', {
-        templateUrl: 'views/blog-detail.html',
-        controller: 'PostCtrl'
-      })
-      .when('/blog/:id/edit', {
-        templateUrl: 'views/blog-editDetail.html',
-        controller: 'PostCtrl'
-      })
-      .when('/products', {
-        templateUrl: 'views/products.html',
         controller: 'ProductsCtrl'
       })
-      .when('/productsDetail', {
-        templateUrl: 'views/productsDetail.html',
-        controller: 'ProductsCtrl'
-      })
-      .when('/orderCreate', {
-        templateUrl: 'views/orderCreate.html',
+      .when('/neighborhoods', {
+        templateUrl: 'views/neighborhoods.html',
         controller: 'OrdersCtrl'
       })
-      .when('/summaryOrder', {
-        templateUrl: 'views/orderSummary.html',
+      .when('/nightlife', {
+        templateUrl: 'views/nightlife.html',
         controller: 'SummaryCtrl'
       })
-      .when('/orderSummaryEdit', {
-        templateUrl: 'views/orderSummaryEdit.html',
+      .when('/parksandplaces', {
+        templateUrl: 'views/parksandplaces.html',
+        controller: 'OrdersCtrl'
+      })
+      .when('/sports', {
+        templateUrl: 'views/sports.html',
+        controller: 'OrdersCtrl'
+      })
+      .when('/transit', {
+        templateUrl: 'views/transit.html',
         controller: 'OrdersCtrl'
       })
       .otherwise({
