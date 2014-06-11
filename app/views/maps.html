@@ -1,8 +1,72 @@
+<body ng-app='katNftApp'>
+  <div class="header">
+  <img src="images/nft_logo_onblack.png" alt="LIFE IN CHARLESTON"><br>
+  <ul class="nav nav-pills pull-right">
+    <li class=""><a ng-href="#/home">Home</a></li>
+    <li><a ng-href="#/about">About</a></li>
+    <li><a ng-href="#">Maps</a></li>
+
+    <li><a ng-href="#/weather">Weather</a></li>
+    <li><a ng-href="#/contact">Contact</a></li>
+    <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()"></a></li>
+    <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
+  </ul>
+  <h3 class="text-muted">CHARLESTON</h3>
+</div>
+<!-- <body ng-app="katNftApp"> -->
+<div class="jumbotron">
+
+  <h3>The ultimate urban neighborhood guide for you, not them.</h3>
+  <h3>Everything you need to know about Charleston - Without All the 'Pretense'</h3>
+  <br>
+  
+  <!-- <h1>{{query}}</h1> -->
+    
+    <!-- GIVE ME SOME SPACE -->
+
+  </br>
+  <p class="lead">
+    <img src="images/iwantadamnwinelist.jpg" alt="LIFE IN CHARLESTON"><br>
+    
+  </p>
+  <p><a class="btn btn-lg btn-default" ng-href="#/login">Let Me Be Your Guide<span class="glyphicon glyphicon-eye-open"></span></a></p>
+</div>
+
+<div class="row marketing">
+  <h4>CHARLESTON NEED TO KNOW</h4>
+  <div ng-controller="EssentialsCtrl">
+ <button ng-click="ATMs()">
+<p><a href="https://www.google.com/maps/search/charleston+atms/@32.8210454,-79.9704779,11z/data=!4m5!2m4!3m3!1satms!2sCharleston,+SC!3s0x88fe7a42dca82477:0x35faf7e0aee1ec6b"><span class="glyphicon glyphicon-eye-open"></span> </a></p>
+
+
+
+  ATMs</button>
+ <button ng-click="Supermarkets()">Supermarkets</button>
+ <button ng-click="HardwareStore()">Hardware Store</button>
+ <button ng-click="Hospitals()">Hospitals</button>
+ <button ng-click="Transportation()">Transportation</button>
+ <button ng-click="Schools()">Schools</button>
+ <h5>I Need To Find {{essentials}} Now!</h5>
+</div>
+<br></br>
+  <h4>I'm NOT A TOURIST</h4>
+    <h5>I feel like a 'local' - Give me the Locals Scoop!</h5>
+<br></br>
+  <h4>HOSTING TOURISTS</h4>
+  <h5>QUICK - Give Me a Plan!</h5>
+</div>
+</body>
+
+<div class="footer">
+  <p><a href="http://kat5sc.com"><span class="glyphicon glyphicon-eye-open"></span> THEKACKIEPROJECT</a></p>
+</div>
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+
+	<a href="https://www.google.com/maps/place/Charleston+County/@32.854232,-79.8613869,9z/data=!3m1!4b1!4m2!3m1!1s0x88fe6019045ece73:0x785b6c39c72caca2><span class="glyphicon glyphicon-eye-open"></span> </a>
 </head>
 <body>
 	
