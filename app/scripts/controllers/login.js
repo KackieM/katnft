@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngKatnft')
+angular.module('katNftApp')
   .controller('LoginController', function($scope, simpleLogin, $location) {
     $scope.pass = null;
     $scope.err = null;

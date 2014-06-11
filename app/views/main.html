@@ -1,15 +1,18 @@
-<div class="header">
+ <body ng-app='katNftApp'>
+  <div class="header">
   <img src="images/nft_logo_onblack.png" alt="LIFE IN CHARLESTON"><br>
   <ul class="nav nav-pills pull-right">
     <li class=""><a ng-href="#">Home</a></li>
     <li><a ng-href="#/about">About</a></li>
+    <li><a ng-href="#/maps">Maps</a></li>
+    <li><a ng-href="#/weather">Weather</a></li>
     <li><a ng-href="#/contact">Contact</a></li>
-    <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()">Log Out</a></li>
+    <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()"></a></li>
     <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
   </ul>
   <h3 class="text-muted">CHARLESTON</h3>
 </div>
-<body ng-app="katnftApp">
+<!-- <body ng-app="katNftApp"> -->
 <div class="jumbotron">
 
   <h3>The ultimate urban neighborhood guide for you, not them.</h3>
@@ -30,17 +33,21 @@
 
 <div class="row marketing">
   <h4>CHARLESTON NEED TO KNOW</h4>
-  <p>
-    You've Arrived!  Now What?
-  </p>
-
+  <div ng-controller="EssentialsCtrl">
+ <button ng-click="ATMs()">ATMs</button>
+ <button ng-click="Supermarkets()">Supermarkets</button>
+ <button ng-click="HardwareStore()">Hardware Store</button>
+ <button ng-click="Hospitals()">Hospitals</button>
+ <button ng-click="Transportation()">Transportation</button>
+ <button ng-click="Schools()">Schools</button>
+ <h5>I Need To Find {{essentials}} Now!</h5>
+</div>
+<br></br>
   <h4>I'm NOT A TOURIST</h4>
-  <p>
-    I've been here before, but I'm NOT A TOURIST - Give me the Locals' Scoop
-  </p>
-
+    <h5>I feel like a 'local' - Give me the Locals Scoop!</h5>
+<br></br>
   <h4>HOSTING TOURISTS</h4>
-  <p>QUICK - Give me Some Info!</p>
+  <h5>QUICK - Give Me a Plan!</h5>
 </div>
 </body>
 

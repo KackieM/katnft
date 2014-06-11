@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('katnftApp', [
+  .module('katNftApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
