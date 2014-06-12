@@ -2,9 +2,18 @@
 <!doctype html>
  <body ng-app='katNftApp'>
 
-<div id="header">
-    <a href="http://www.notfortourists.com"><img src="/images/nft_logo_onblack.png" alt="Not For Tourists" /></a>
-    <span style="position: absolute; top:5px; right:9px;">
+<div class="header">
+<img src="images/nft_logo_onblack.png" alt="LIFE IN CHARLESTON"><br>
+  <ul class="nav nav-pills pull-right">
+    <li class=""><a ng-href="#/main">Home</a></li>
+    <li><a ng-href="#/about">About</a></li>
+    <li><a ng-href="#/contact">Contact</a></li>
+    <li><a ng-show-auth="login" ng-controller="LoginController"><a href="#" ng-click="logout()">Log Out</a></li>
+    <li ng-cloak ng-show-auth="['logout','error']"><a href="#">Log In</a></li>
+  </ul>
+  <h3 class="text-muted">NFT - NOT FOR TOURISTS - CHARLESTON</h3>
+</div>
+<img src="images/modelwithbaggage.jpg" alt="LIFE IN CHARLESTON"><br>
 <div ng-cloak class="row">
     <div class="col-md-12">
 
