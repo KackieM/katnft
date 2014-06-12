@@ -1,5 +1,11 @@
 <!doctype html>
-<body>
+<html ng-app='katNftApp'>
+	<head> lang="en"
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+
 <div class="header">
 <img src="images/nft_logo_onblack.png" alt="LIFE IN CHARLESTON"><br>
   <ul class="nav nav-pills pull-right">
@@ -13,7 +19,14 @@
 </div>
 <img src="images/modelwithbaggage.jpg" alt="LIFE IN CHARLESTON"><br>
 
+	<h1>{{hello}}</h1>
+	<input type="text" ng-model="hello"/>
+
+
 </body>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js>"</script>
 <div class="footer">
   <p><a href="http://kat5sc.com"><span class="glyphicon glyphicon-eye-open"></span> THEKACKIEPROJECT</a></p>
 </div>
+</html>
