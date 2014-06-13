@@ -4,38 +4,35 @@
     <meta charset="UTF-8">
     <title></title>
   </head>
-  <body>
+
 <div class="header">
 <img src="images/nft_logo_onblack.png" alt="LIFE IN CHARLESTON"><br>
   <ul class="nav nav-pills pull-right">
-    <li class=""><a ng-href="#/main">Home</a></li>
-    <li><a ng-href="#/about">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-    <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()">Log Out</a></li>
+    <button ng-click=""><a ng-href="#/main">Home</a></button>
+    <button ng-click="#/outandabout">About</a></button>
+    <button ng-click="#">Out and About</button>
+    <button ng-click ng-show-auth="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()">Log Out</a></li>
     <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
   </ul>
   <h3 class="text-muted">NFT - NOT FOR TOURISTS - CHARLESTON</h3>
 </div>
-  <div class="header">
-
-    <h1>CONTACT</h1>
-  
+  <h1>Out and About In Charleston</h1>
 <div class="jumbotron">
-  <h1>KACKIE CONTACT</h1>
+  <h3>Everything you need to know about Charleston - Without All the 'Pretense'</h3>
   <p class="lead">
-    <img src="images/modelwithbaggage.jpg" alt="I'm The Grim Reaper"><br>
+    <img src="images/snobbw.jpg" alt="I'm The Grim Reaper"><br>
   </p>
   <p><a class="btn btn-default btn-lg active" ng-href="#/nft">Let Me Be Your Guide<span class="glyphicon glyphicon-eye-open"></span></a></p>
 </div>
 
 <div class="row marketing">
-<div ng-controller="ArtController as store">
+<div ng-controller="">
 
 <h4>GALLERY NAVIGATION</h4>
   <ul class="nav nav-pills pull-right">
     <li class=""><a ng-href="#/main">Home</a></li>
     <li><a ng-href="#/about">About</a></li>
-    <li><a ng-href="#/arts">arts</a></li>
+    <li><a ng-href="#/arts">Arts</a></li>
     <li><a ng-href="#/landmarks">Landmarks</a></li>
     <li><a ng-href="#/neighborhoods">Neighborhoods</a></li>
     <li><a ng-href="#/nightlife">NightLife</a></li>

@@ -1,55 +1,49 @@
-<!-- wait for auth to resolve (avoid flashing login page befo -->
 <!doctype html>
- <body ng-app='katNftApp'>
+<html ng-app='katNftApp'>
+    <head> lang="en"
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+<body>
 
 <div class="header">
 <img src="images/nft_logo_onblack.png" alt="LIFE IN CHARLESTON"><br>
   <ul class="nav nav-pills pull-right">
     <li class=""><a ng-href="#/main">Home</a></li>
     <li><a ng-href="#/about">About</a></li>
-    <li><a ng-href="#/contact">Contact</a></li>
-    <li><a ng-show-auth="login" ng-controller="LoginController"><a href="#" ng-click="logout()">Log Out</a></li>
+    <li><a ng-href="#/contact">Charleston Life</a></li>
+    <li><a ng-href="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()">Log Out</a></li>
     <li ng-cloak ng-show-auth="['logout','error']"><a href="#">Log In</a></li>
   </ul>
   <h3 class="text-muted">NFT - NOT FOR TOURISTS - CHARLESTON</h3>
 </div>
-<img src="images/modelwithbaggage.jpg" alt="LIFE IN CHARLESTON"><br>
+<img src="images/rollingupgrassmodel.jpg" alt="LIFE IN CHARLESTON"><br>
 <div ng-cloak class="row">
     <div class="col-md-12">
-
-        <!-- examples for fun and profit -->
-        <!--<div ng-show-auth="login">{{auth.user|json}}</div>-->
-        <!--<div ng-show-auth="error,logout">Logged out</div>-->
-        <!--<div ng-show-auth="error">{{auth.error}}</div>-->
         <fieldset>
-            <legend>KACKIE SAYS YES!</legend>
             <p>
-                <button class="btn btn-lg btn-primary" ng-click="login('facebook')">Facebook</button>
-                <button class="btn btn-lg btn-primary" ng-click="login('twitter')">Twitter</button>
+            <button class="btn btn-lg btn-primary" ng-click="login('facebook')">Facebook</button>
+            <button class="btn btn-lg btn-primary" ng-click="login('twitter')">Twitter</button>
             </p>
         </fieldset>
-
-        
-        <p>&nbsp;</p>
+        <p>Some Words From Jack Mancattan</p>
+        </b>
         <form role="form">
-            <fieldset>
-                <legend>Email/Password</legend>
-
+        <fieldset>
+            <legend>Email/Password</legend>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>email</label>
+                          <label>email</label>
                             <input class="form-control" type="text" ng-model="email" />
                         </div>
-
                         <div class="form-group">
-                            <label>password</label>
-                            <input class="form-control" type="password" ng-model="pass" />
+                        <label>password</label>
+                        <input class="form-control" type="password" ng-model="pass" />
                         </div>
-
                         <div class="form-group" ng-show="createMode">
-                            <label>confirm pass</label>
-                            <input class="form-control" type="password" ng-model="confirm" />
+                        <label>confirm pass</label>
+                        <input class="form-control" type="password" ng-model="confirm" />
                         </div>
 
                         <button class="btn btn-primary" ng-click="loginPassword()" ng-hide="createMode">Log In</button>
@@ -61,7 +55,7 @@
             </fieldset>
         </form>
         
-        <br />
+        <br/>
         <div ng-show="err" class="alert alert-danger"><strong>{{err}}</strong></div>
 
     </div>
