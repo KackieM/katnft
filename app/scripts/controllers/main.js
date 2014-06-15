@@ -1,6 +1,16 @@
 'use strict';
 
-var katNftApp = angular.module('katNftApp', []);
+// var katNftApp = angular.module('katNftApp', []);
+
+angular.module('katNftApp')
+    .controller('MainCrtl', function($scope, $http) {
+        var url = ""
+    }
+
+  
+
+
+
 
   katNftApp.controller('EssentialsCrtl', ['$scope', function($scope) {
     $scope.essentials = 'essentials';
