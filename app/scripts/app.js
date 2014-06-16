@@ -6,13 +6,12 @@ angular
     'ngResource',
     'ngSanitize',
     'ngRoute',
-    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        // controller: 'MainCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
@@ -24,6 +23,10 @@ angular
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
+        controller: 'PostCtrl'
+      })
+      .when('/englishman', {
+        templateUrl: 'views/englishman.html',
         controller: 'PostCtrl'
       })
       .when('/landmarks', {

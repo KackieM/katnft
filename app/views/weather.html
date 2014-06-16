@@ -1,24 +1,23 @@
 <!doctype html>
- <body ng-app='katNftApp'>
-  <div class="header">
+ <div class="header">
    <a href="http://www.notfortourists.com"><img src="/images/nft_logo_onblack.png" alt="Not For Tourists" /></a>
     <span style="position: absolute; top:5px; right:9px;">
       <br>
   <ul class="nav nav-pills pull-right">
-    <li class=""><a ng-href="#">Home</a></li>
+    <li class=""><a ng-href="#/main">Home</a></li>
     <li><a ng-href="#/about">About</a></li>
     <li><a ng-href="#/maps">Maps</a></li>
     <li><a ng-href="#">Weather</a></li>
-    <li><a ng-href="#/contact">Contact</a></li>
+    <li><a ng-href="#/outandabout">Out and About</a></li>
     <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()"></a></li>
     <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
   </ul>
-  <h3 class="text-muted">CHARLESTON</h3>
+  <h3 class="text-muted">NFT - CHARLESTON</h3><a ng-href="#/main"></a>
 </div>
 <div class="jumbotron">
 
   <h3>The ultimate urban neighborhood guide for you, not them.</h3>
-  <!-- <h3>Everything you need to know about Charleston - Without All the 'Pretense'</h3> -->
+ 
   <br>
   THEKACKIEPROJECT
   </br>

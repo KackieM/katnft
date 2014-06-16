@@ -1,29 +1,27 @@
 <!doctype html>
-<html ng-app='katNftApp'>
-  <head> lang="en"
-    <meta charset="UTF-8">
-    <title></title>
-  </head>
-
-<div class="header">
-<img src="images/nft_logo_onblack.png" alt="LIFE IN CHARLESTON"><br>
+  <div class="header">
+   <a href="http://www.notfortourists.com"><img src="/images/nft_logo_onblack.png" alt="Not For Tourists" /></a>
+    <span style="position: absolute; top:5px; right:9px;">
+      <br>
   <ul class="nav nav-pills pull-right">
-    <button ng-click=""><a ng-href="#/main">Home</a></button>
-    <button ng-click="#/outandabout">About</a></button>
-    <button ng-click="#">Out and About</button>
-    <button ng-click ng-show-auth="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()">Log Out</a></li>
+    <li class=""><a ng-href="#/main">Home</a></li>
+    <li><a ng-href="#/about">About</a></li>
+    <li><a ng-href="#/maps">Maps</a></li>
+    <li><a ng-href="#/weather">Weather</a></li>
+    <li><a ng-href="#">Out and About</a></li>
+    <li ng-cloak ng-show-auth="login" ng-controller="LoginController"><a href="#/login" ng-click="logout()"></a></li>
     <li ng-cloak ng-show-auth="['logout','error']"><a href="#/login">Log In</a></li>
   </ul>
-  <h3 class="text-muted">NFT - NOT FOR TOURISTS - CHARLESTON</h3>
+  <h3 class="text-muted">NFT - CHARLESTON</h3><a ng-href="#"></a>
 </div>
   <h1>Out and About In Charleston</h1>
-<div class="jumbotron">
+<!-- <div class="jumbotron">
   <h3>Everything you need to know about Charleston - Without All the 'Pretense'</h3>
   <p class="lead">
     <img src="images/snobbw.jpg" alt="I'm The Grim Reaper"><br>
   </p>
   <p><a class="btn btn-default btn-lg active" ng-href="#/nft">Let Me Be Your Guide<span class="glyphicon glyphicon-eye-open"></span></a></p>
-</div>
+</div> -->
 
 <div class="row marketing">
 <div ng-controller="">
