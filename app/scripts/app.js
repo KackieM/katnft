@@ -5,7 +5,7 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute',
+    'ngRoute'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -13,24 +13,24 @@ angular
         templateUrl: 'views/main.html',
         // controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
+      .when('/history', {
+        templateUrl: 'views/historicalsites.html',
         // controller: 'PostsCtrl'
       })
-      .when('/arts', {
-        templateUrl: 'views/arts.html',
-        controller: 'PostsCtrl'
+      .when('/beaches', {
+        templateUrl: 'views/beaches.html',
+        controller: 'beachesCtrl'
       })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
+      .when('/edisto', {
+        templateUrl: 'views/edisto.html',
         controller: 'PostCtrl'
       })
-      .when('/englishman', {
-        templateUrl: 'views/englishman.html',
+      .when('/lowcountryislands', {
+        templateUrl: 'views/lowcountryislands.html',
         controller: 'PostCtrl'
       })
-      .when('/landmarks', {
-        templateUrl: 'views/landmarks.html',
+      .when('/localshangout', {
+        templateUrl: 'views/localshangout.html',
         controller: 'ProductsCtrl'
       })
       .when('/login', {
