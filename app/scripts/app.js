@@ -19,43 +19,43 @@ angular
       })
       .when('/beaches', {
         templateUrl: 'views/beaches.html',
-        controller: 'beachesCtrl'
+        // controller: 'beachesCtrl'
       })
       .when('/edisto', {
         templateUrl: 'views/edisto.html',
-        controller: 'PostCtrl'
+        // controller: 'PostCtrl'
       })
       .when('/lowcountryislands', {
         templateUrl: 'views/lowcountryislands.html',
-        controller: 'PostCtrl'
+        // controller: 'PostCtrl'
       })
       .when('/localshangout', {
         templateUrl: 'views/localshangout.html',
-        controller: 'ProductsCtrl'
+        // controller: 'ProductsCtrl'
       })
       .when('/login', {
         templateUrl: 'views/login.html',
-        controller: 'ProductsCtrl'
+        // controller: 'ProductsCtrl'
       })
       .when('/neighborhoods', {
         templateUrl: 'views/neighborhoods.html',
-        controller: 'OrdersCtrl'
+        // controller: 'OrdersCtrl'
       })
       .when('/nightlife', {
         templateUrl: 'views/nightlife.html',
-        controller: 'SummaryCtrl'
+        // controller: 'SummaryCtrl'
       })
       .when('/parksandplaces', {
         templateUrl: 'views/parksandplaces.html',
-        controller: 'OrdersCtrl'
+        // controller: 'OrdersCtrl'
       })
       .when('/sports', {
         templateUrl: 'views/sports.html',
-        controller: 'OrdersCtrl'
+        // controller: 'OrdersCtrl'
       })
       .when('/transit', {
         templateUrl: 'views/transit.html',
-        controller: 'OrdersCtrl'
+        // controller: 'OrdersCtrl'
       })
       .otherwise({
         redirectTo: '/'
