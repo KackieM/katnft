@@ -53,6 +53,10 @@ angular
         templateUrl: 'views/transit.html',
         // controller: 'OrdersCtrl'
       })
+      .when('/blog', {
+        templateUrl: 'views/blog.html',
+        controller: 'BlogCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
