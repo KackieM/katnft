@@ -1,4 +1,4 @@
-$resource('http://ajax.googleapis.com/ajax/services/feed/load',{},{
+$resource('https://ajax.googleapis.com/ajax/services/feed/find?v=1.0&q=Official%20Google%20Blogs',{},{
 	fetch: {method: 'JSONP', params: {v:'1.0', callback: 'JSON_CALLBACK'}}
 });
 
