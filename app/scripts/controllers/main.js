@@ -2,10 +2,10 @@
 
 // var katNftApp = angular.module('katNftApp', []);
 
-angular.module('katNftApp')
-    .controller('KatCtrl', function($scope, CharlestonCityPaperFeed) {
+angular.module('katNftApp', ['ngResource', 'blogServices'])
+    .controller('KatCtrl', function($scope, BlogList) {
         $scope.feed = CharlestonCityPaperFeed.get();
-    })
+    });
     .controller('MainCrtl', function($scope, $http) {
         var url = ""
     }

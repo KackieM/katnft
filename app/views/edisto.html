@@ -14,8 +14,19 @@
   <h3 class="text-muted">NFT - CHARLESTON</h3><a ng-href="#/main"></a>
 </div>
 <body>
-
-  <div>
+<div class="container">
+  <div class="well" ng-repeat="feed in feeds | orderBy:'title'" ng-animate="'animate'">
+    <h2>{{feed.title}}</h2>
+    <p>
+      <span ng-repeat="item in feed.entries" ng-animate ="'animate'">
+        <a class="h4" href="{{item.link}}" target="_blank">{{item.title}}</a>
+        </br>
+        <span ng-bind-html="item.contentSnippet"></span>
+        <br/><br/>
+      </span>
+    </p>
+  </div>
+<div>
   <h1>THE BEACH HOUSE</h1>
   <p class="lead">
     <img src="images/edistosunset.jpg" alt="Charleston"><br>

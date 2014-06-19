@@ -31,11 +31,7 @@ angular
       })
       .when('/localshangout', {
         templateUrl: 'views/localshangout.html',
-        // controller: 'ProductsCtrl'
-      })
-      .when('/login', {
-        templateUrl: 'views/login.html',
-        // controller: 'ProductsCtrl'
+        controller: 'BlogCtrl'
       })
       .when('/neighborhoods', {
         templateUrl: 'views/neighborhoods.html',
