@@ -1,44 +1,34 @@
 <!DOCTYPE html>
+<html ng-app="katNftApp">
 <div class="header">
-   <a href="http://www.notfortourists.com"><img src="/images/snobbw.jpg" alt="Not For Tourists" />
-   </a>
     <span style="position: absolute; top:5px; right:15px;">
       <br>
   <ul class="nav nav-pills pull-right">
     <li class=""><a ng-href="#/main">HOME</a></li>
     <li><a ng-href="#/historicalsites">HISTORY</a></li>
-    <li><a ng-href="#/beaches">BEACHES</a></li>
+    <!-- <li><a ng-href="#/beaches">BEACHES</a></li> -->
     <li><a ng-href="#/lowcountryislands">LOW COUNTRY ISLANDS</a></li>
-    <li><a ng-href="#/localshangout">FEELIN' LOCAL</a></li>
+    <!-- <li><a ng-href="#/localshangout">FEELIN' LOCAL</a></li> -->
     <li><a ng-href="#/edisto">HEAVEN ON EARTH</a></li>
     <li><a ng-href="#">LOCALS TALK</a></li>
   </ul>
   <h3 class="text-muted">lowcountry</h3>
 </div>
   <meta charset="UTF-8">
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript">
 
-  google.load("feeds", "1");
+  <div class="container">
 
-  function initialize() {
-    var feed = new google.feeds.Feed("http://fastpshb.appspot.com/feed/1/fastpshb");
-    for (var i = 0; i < result.feed.entries.length; i++) {
-      var entry = result.feed.entries [i];
-      var div = document.createElement("div");
-      div.appendChild(document.createTextNode(entry.title));
-      container.appendChild(div);
-      }
-    }
-  });
-}
+  <body ng-app="katNftApp">
 
-google.setOnLoadCallback(initialize);
+    Name: <input type="text" ng model="name"/>
+        {{name}}
 
-</script>
-</head>
-<body>
-  <div id="feed">  </div>
+  </div>
+
+
+
+<script src="bower_components/angular/angular.min.js"></script>
+
 </body>
 </html>
 <div class="footer">
