@@ -6,13 +6,20 @@ angular
     'ngResource',
     'ngSanitize',
     'ngRoute',
+<<<<<<< HEAD
     'ngMap'
+=======
+    'firebase',
+    'angularfire.firebase',
+    'angularfire.login',
+    'simpleLoginTools'
+>>>>>>> bd5032f373dd8d8637ab3710b87b7ee5be41abc1
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        // controller: 'MainCtrl'
+        controller: 'MainCtrl'
       })
       .when('/history', {
         templateUrl: 'views/historicalsites.html',

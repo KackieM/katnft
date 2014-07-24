@@ -1,19 +1,25 @@
 <!doctype html>
+
 <html class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<<<<<<< HEAD
     <title>KAT SC BARRIER ISLANDS APP</title>
 
+=======
+    <title>KAT CHARLESTON BARRIER ISLANDS APP</title>
+>>>>>>> bd5032f373dd8d8637ab3710b87b7ee5be41abc1
     <meta name="description" content="">
-    <meta name="keywords" content="charleston, mt pleasant, west ashley, boating, sullivan's island, isle of palms, not for tourists, local, kat5sc, katherine mattison">
+    <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="/images/modelwithbaggage.jpeg" type="images/x-icon">
     <link rel="icon" href="/images/modelwithbaggage.jpeg" type="images/x-icon">
-    <!-- // <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script> -->
+    
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -29,25 +35,17 @@
     <!-- Add your site or application content here -->
     <div class="container" ng-view=""></div>
 
+    <!-- [if lt IE 9]> -->
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <!-- <![endif] -->
+
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
@@ -62,6 +60,7 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+<<<<<<< HEAD
         <script src="scripts/controllers.js"</script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/islands.js"></script>
@@ -69,33 +68,17 @@
         <script src="scripts/services/firebase.js"></script>
         
         <script src="scripts/blog_services.js"></script>
+=======
+        <script src="scripts/controllers/main.js"</script>
+        <script src="scripts/angularfire/config.js"></script>
+        <script src="scripts/services/firebase.js"></script>
+        <script src="scripts/services/login.js"></script>
+        <script src="scripts/angularfire/simpleLoginTools.js"></script>
+        <script src="scripts/angularfire/routesecurity.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+>>>>>>> bd5032f373dd8d8637ab3710b87b7ee5be41abc1
 
 
-<!-- <div id='messagesDiv'></div>
-    <input type='text' id='nameInput' placeholder='Name'>
-    <input type='text' id='messageInput' placeholder='Message'>
-    <script>
-        var myDataRef = new Firebase('https://katnft.firebaseio.com/');
-        $('#messageInput').keypress(function (e) {
-        if (e.keyCode == 13) {
-          var name = $('#nameInput').val();
-          var text = $('#messageInput').val();
-          // myDataRef.set('User ' + name + ' says ' + text);
-          // myDataRef.set({name: name, text: text});
-          myDataRef.push({name: name, text: text});
-           $('#messageInput').val('');
-        }
-        });
-        myDataRef.on('child_added', function(snapshot) {
-        var message = snapshot.val();
-        displayChatMessage(message.name, message.text);
-        });
-        function displayChatMessage(name, text) {
-        $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
-        $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
-      };
-    </script>
- -->        
         <!-- endbuild -->
         
 
