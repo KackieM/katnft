@@ -10,7 +10,9 @@ angular
     'firebase',
     'angularfire.firebase',
     'angularfire.login',
-    'simpleLoginTools'
+    'simpleLoginTools',
+    'blog_services',
+    'citysinner'
 
   ])
   .config(function ($routeProvider) {
