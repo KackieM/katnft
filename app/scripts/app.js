@@ -5,7 +5,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'ngMap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -27,7 +28,8 @@ angular
       })
       .when('/lowcountryislands', {
         templateUrl: 'views/lowcountryislands.html',
-        // controller: 'PostCtrl'
+        controller: 'islandCtrl'
+        // directive: 'londontest'
       })
       .when('/localshangout', {
         templateUrl: 'views/localshangout.html',

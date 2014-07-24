@@ -1,17 +1,21 @@
 <!doctype html>
 <div class="header">
-    <a href="http://www.notfortourists.com"><img src="/images/snobbw.jpg" alt="Not For Tourists" /></a>
     <span style="position: absolute; top:5px; right:15px;">
       <br>
       <ul class="nav nav-pills pull-right">
         <li class=""><a ng-href="#/main">HOME</a></li>
         <li><a ng-href="#/historicalsites">HISTORY</a></li>
-        <!-- <li><a ng-href="#/beaches">BEACHES</a></li> -->
+        <li><a ng-href="#/beaches">BEACHES</a></li>
         <li><a ng-href="#">LOW COUNTRY ISLANDS</a></li>
         <!-- <li><a ng-href="#/localshangout">FEELIN' LOCAL</a></li> -->
         <li><a ng-href="#/edisto">HEAVEN ON EARTH</a></li>
         <li><a ng-href="#/blog">LOCALS TALK</a></li>
     </ul>
+</div>
+<div ng-controller="islandCtrl" class="ng-scope">
+  <map zoom="1" center="[43.6650000, -79.4103000]">
+    <marker-clusterer markers="markersData">
+  </marker-clusterer></map>
 </div>
 
 
@@ -22,8 +26,9 @@
     <img src="images/iopbeach.jpg" alt="Charleston"><br>
     The Charleston Life
   </p>
-  <p><a class="btn btn-lg btn-default" ng-href="#">Explore Charleston</a></p>
+  <p><a class="btn btn-lg btn-default" ng-href="#">Explore The Barrier Islands</a></p>
 </div>
+<div my-map=""></div>
 
 
 </body>
