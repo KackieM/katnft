@@ -350,7 +350,7 @@ module.exports = function (grunt) {
         singleRun: true
       }
     }
-  });
+  };
 
 
   grunt.registerTask('serve', function (target) {
